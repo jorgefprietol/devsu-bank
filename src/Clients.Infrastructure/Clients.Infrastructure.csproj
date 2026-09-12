@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../Clients.Application/Clients.Application.csproj" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <Compile Include="../Common/RabbitTopology.cs" Link="Messaging/RabbitTopology.cs" />
+  </ItemGroup>
+</Project>
